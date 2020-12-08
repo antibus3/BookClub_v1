@@ -1,25 +1,22 @@
 <div class="ui attached stackable menu">
   <div class="ui container">
     <a class="item">
-      <i class="home icon"></i> Home
+      <i class="book icon"></i> Книги
     </a>
     <a class="item">
-      <i class="grid layout icon"></i> Browse
+      <i class="user icon"></i> Авторы
     </a>
     <a class="item">
-      <i class="mail icon"></i> Messages
+      <i class="coffee icon"></i> Встречи клуба
     </a>
-    <div class="ui simple dropdown item">
-      More
-      <i class="dropdown icon"></i>
-      <div class="menu">
-        <a class="item"><i class="edit icon"></i> Edit Profile</a>
-        <a class="item"><i class="globe icon"></i> Choose Language</a>
-        <a class="item"><i class="settings icon"></i> Account Settings</a>
-      </div>
-    </div>
+    <a class="item">
+      <i class="list alternate outline icon"></i> Заявки на доклад
+    </a>
     <div class="right item">
       <div class="ui input"><input type="text" placeholder="Search..."></div>
     </div>
   </div>
 </div>
+<main class="app-content">
+  {{outlet}}
+</main>
