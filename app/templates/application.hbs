@@ -1,5 +1,22 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
-
-{{outlet}}
+<div class="ui attached stackable menu">
+  <div class="ui container">
+    <a class="item">
+      <i class="book icon"></i> Книги
+    </a>
+    <a class="item">
+      <i class="user icon"></i> Авторы
+    </a>
+    <a class="item">
+      <i class="coffee icon"></i> Встречи клуба
+    </a>
+    <a class="item">
+      <i class="list alternate outline icon"></i> Заявки на доклад
+    </a>
+    <div class="right item">
+      <div class="ui input"><input type="text" placeholder="Search..."></div>
+    </div>
+  </div>
+</div>
+<main class="app-content">
+  {{outlet}}
+</main>
