@@ -1,0 +1,31 @@
+# Node.js
+# Build a general Node.js project with npm.
+# Add steps that analyze code, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
+
+trigger:
+- master
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- task: NodeTool@0
+  inputs:
+    versionSpec: '10.1.0'
+  displayName: 'Install Node.js'
+
+- script: |
+    npm install -g ember-cli@3.1.4
+  displayName: 'ember cli install'
+
+- task: NPM@1
+  inputs:
+    verbose: false
+    customRegistry: useFeed
+    customFeed: '97fd874b-c6e0-433c-ae3f-425a4e3e1ab6'
+  displayName: 'npm install'
+
+- script: |
+    ember build --environment=production
+  displayName: 'ember build'
