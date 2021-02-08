@@ -21,8 +21,8 @@ steps:
 
 - script: |
     npm install
-  displayName: 'ember build'
+  displayName: 'npm install'
 
 - script: |
-    ember build --environment=production
+    ember build
   displayName: 'ember build'
