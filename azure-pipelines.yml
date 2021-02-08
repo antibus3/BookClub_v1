@@ -18,3 +18,7 @@ steps:
 - script: |
     npm install -g ember-cli@3.1.4
   displayName: 'ember cli install'
+
+- script: |
+    ember build --environment=production
+  displayName: 'ember build'
