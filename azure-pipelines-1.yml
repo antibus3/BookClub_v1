@@ -19,12 +19,9 @@ steps:
     npm install -g ember-cli@3.1.4
   displayName: 'ember cli install'
 
-- task: NPM@1
-  inputs:
-    verbose: false
-    customRegistry: useFeed
-    customFeed: '97fd874b-c6e0-433c-ae3f-425a4e3e1ab6'
-  displayName: 'npm install'
+- script: |
+    npm install
+  displayName: 'ember build'
 
 - script: |
     ember build --environment=production
