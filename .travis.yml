@@ -24,3 +24,14 @@ before_install:
 script:
   - npm run lint:js
   - npm test
+  - npm run build -- -prod # build app and prepare dist folder
+
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: 4b8a853951a72c426469b6c3aacefda81604f8d5
+  keep-history: true
+  on:
+    branch: master
+  local-dir: dist
+  verbose: true
