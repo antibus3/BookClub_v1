@@ -29,3 +29,7 @@ steps:
 - script: |
     ember build
   displayName: 'ember build'
+
+- task: PublishBuildArtifacts@1
+inputs:
+ PathtoPublish: '$(System.DefaultWorkingDirectory)/$(DistFolder)'
