@@ -29,7 +29,7 @@ module.exports = function(environment) {
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
-    ENV.rootURL = '/azurePipelines/';
+    ENV.rootURL = '/BookClub_v1/azurePipelines/';
   }
 
   if (environment === 'test') {
@@ -42,12 +42,12 @@ module.exports = function(environment) {
 
     ENV.APP.rootElement = '#ember-testing';
     ENV.APP.autoboot = false;
-    ENV.rootURL = '/azurePipelines/';
+    ENV.rootURL = '/BookClub_v1/azurePipelines/';
   }
 
   if (environment === 'production') {
     // here you can enable a production-specific feature
-    ENV.rootURL = '/azurePipelines/';
+    ENV.rootURL = '/BookClub_v1/azurePipelines/';
   }
 
   return ENV;
