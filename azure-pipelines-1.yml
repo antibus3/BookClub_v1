@@ -27,6 +27,10 @@ steps:
   displayName: 'npm install'
 
 - script: |
+    npm install -g json-server
+  displayName: 'json-server install'
+
+- script: |
     ember build
   displayName: 'ember build'
 
