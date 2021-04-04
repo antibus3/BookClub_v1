@@ -1,0 +1,7 @@
+{
+    "authors": [
+        {"id": 1, "firstName": "Иван", "lastName": "Иванов" },
+        {"id": 2, "firstName": "Пётр", "lastName": "Петров" },
+        {"id": 3, "firstName": "Сидор", "lastName": "Сидорович" }
+    ]
+}

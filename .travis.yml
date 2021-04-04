@@ -25,6 +25,7 @@ script:
   - npm run lint:js
   - npm test
   - npm run build -- -prod # build app and prepare dist folder
+  - json-server --watch tests/test-data/data.json
 
 deploy:
   provider: pages
